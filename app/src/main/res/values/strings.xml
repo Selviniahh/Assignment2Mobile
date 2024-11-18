@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Assignment2</string>
+    <string name="make_a_search">Make a search</string>
+    <string name="enter_a_title">Enter a Title</string>
 </resources>
