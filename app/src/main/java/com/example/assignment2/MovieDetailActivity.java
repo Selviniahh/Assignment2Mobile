@@ -82,7 +82,6 @@ public class MovieDetailActivity extends AppCompatActivity {
                         JSONObject jsonResponse = new JSONObject(responseData);
                         String responseStatus = jsonResponse.getString("Response");
                         if (responseStatus.equals("True")) {
-                            // Existing fields
                             String title = jsonResponse.getString("Title");
                             String year = jsonResponse.getString("Year");
                             String rating = jsonResponse.getString("Rated");
@@ -98,7 +97,6 @@ public class MovieDetailActivity extends AppCompatActivity {
                             String language = jsonResponse.getString("Language");
 
                             runOnUiThread(() -> {
-                                // Existing fields
                                 textViewTitle.setText(title);
                                 textViewYear.setText("Year: " + year);
                                 textViewRating.setText("Rating: " + handleNAValue(rating));
